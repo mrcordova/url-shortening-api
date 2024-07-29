@@ -102,12 +102,21 @@ footer {
   align-items: center;
 
   padding-block-start: 2.3rem;
-  word-spacing: -0.2rem;
-  letter-spacing: -0.05rem;
+
   & > h1 {
+    word-spacing: -0.2rem;
+    letter-spacing: -0.05rem;
     font-size: 2.65rem;
     line-height: 1.15;
     color: var(--Very-Dark-Blue);
+  }
+
+  & > p {
+    padding-block-start: 0.85rem;
+    padding-inline: 0.8rem;
+    font-size: 1.13rem;
+    line-height: 1.65;
+    color: var(--Grayish-Violet);
   }
 }
 .url-input-container {
