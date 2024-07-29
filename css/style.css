@@ -51,6 +51,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: hsl(230, 25%, 95%);
+  text-align: center;
   padding-block-start: 10.5rem;
 }
 .boost-container {
@@ -64,15 +65,23 @@ header {
 .details-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .detail-card {
   position: relative;
+  background-color: white;
+  padding-block: 4rem;
+  margin-inline: 1rem;
 }
 .detail-img {
+  background-color: var(--Dark-Violet);
   position: absolute;
-  top: -1rem;
-  left: 0;
+  top: -2.8rem;
+  left: 7.5rem;
   transition: 1s ease;
+
+  border-radius: 50%;
+  padding: 1.5rem;
 }
 footer {
   display: flex;
@@ -81,6 +90,20 @@ footer {
 }
 .icons {
   display: flex;
+}
+.heading-card {
+  padding-block-end: 4.6rem;
+  & > h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.67rem;
+  }
+
+  & > p {
+    color: var(--Grayish-Violet);
+    padding-inline: 1rem;
+    padding-block: 1.2rem;
+    line-height: 1.7;
+  }
 }
 .hero-img {
   /* display: flex; */
@@ -133,6 +156,11 @@ footer {
     margin-block-start: 1.8rem;
     margin-block-end: 10.5rem;
   }
+}
+.path {
+  background-color: var(--Cyan);
+  width: 0.7rem;
+  height: 6rem;
 }
 .url-input-container {
   background-image: url("/images/bg-shorten-mobile.svg");
