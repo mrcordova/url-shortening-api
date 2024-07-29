@@ -24,7 +24,15 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-
+.detail-card {
+  position: relative;
+}
+.detail-img {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  transition: 1s ease;
+}
 footer {
   display: flex;
   flex-direction: column;
