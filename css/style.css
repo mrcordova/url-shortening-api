@@ -118,6 +118,17 @@ footer {
     line-height: 1.65;
     color: var(--Grayish-Violet);
   }
+
+  & > button {
+    color: white;
+    background-color: var(--Cyan);
+
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    padding-inline: 2.5rem;
+    padding-block: 0.8rem;
+    margin-block-start: 1.8rem;
+  }
 }
 .url-input-container {
   background-image: url("/images/bg-shorten-mobile.svg");
