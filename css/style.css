@@ -11,12 +11,24 @@ header {
 #desktop-menu {
   display: none;
 }
-
+.advanced-stat-container {
+  position: relative;
+}
 .hero-section {
   display: flex;
   flex-direction: column;
 }
-
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+.url-input-container {
+  position: absolute;
+  top: -1rem;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+}
 @media (min-width: 50rem) {
   .hero-section {
     flex-direction: row-reverse;
