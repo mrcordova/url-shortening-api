@@ -53,6 +53,7 @@ header {
   background-color: hsl(230, 25%, 95%);
   text-align: center;
   padding-block-start: 10.5rem;
+  padding-block-end: 5rem;
 }
 .boost-container {
   display: flex;
@@ -70,8 +71,20 @@ header {
 .detail-card {
   position: relative;
   background-color: white;
-  padding-block: 4rem;
+  padding-block: 4rem 2.5rem;
   margin-inline: 1rem;
+  border-radius: 0.5rem;
+  & > h3 {
+    font-size: 1.4rem;
+    padding-block-start: 0.7rem;
+  }
+  & > p {
+    color: var(--Grayish-Violet);
+    padding-block-start: 1rem;
+    padding-inline: 2.15rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
 }
 .detail-img {
   background-color: var(--Dark-Violet);
@@ -159,7 +172,7 @@ footer {
 }
 .path {
   background-color: var(--Cyan);
-  width: 0.7rem;
+  width: 0.5rem;
   height: 6rem;
 }
 .url-input-container {
