@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+
+  --Red: hsl(0, 87%, 67%);
+
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   min-height: 100vh;
   min-height: 100svh;
@@ -7,10 +31,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-inline: 1rem 1.2rem;
+  padding-block: 2.5rem 2.3rem;
 }
 #desktop-menu {
   display: none;
 }
+#hamburger {
+  transform: scale(1.5);
+  & > svg > path {
+    fill: var(--Grayish-Violet);
+  }
+}
+
 .advanced-stat-container {
   position: relative;
   display: flex;
@@ -45,13 +79,36 @@ footer {
 .icons {
   display: flex;
 }
+.hero-img {
+  /* display: flex; */
+  /* fle */
+  padding-inline-start: 1rem;
+  /* aspect-ratio: 1; */
+  max-width: fit-content;
+  width: 32rem;
+  /* aspect-ratio: 1.7; */
+  /* height: 24rem; */
+  /* overflow: hidden; */
+}
 .hero-section {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  padding-block-start: 2.3rem;
+  word-spacing: -0.2rem;
+  letter-spacing: -0.05rem;
+  & > h1 {
+    font-size: 2.65rem;
+    line-height: 1.15;
+    color: var(--Very-Dark-Blue);
+  }
 }
 .url-input-container {
   background-image: url("/images/bg-shorten-mobile.svg");

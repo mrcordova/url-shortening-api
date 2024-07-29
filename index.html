@@ -26,7 +26,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="poppins-medium">
     <header>
       <img src="./images/logo.svg" alt="shortly" />
       <nav id="desktop-menu">
@@ -51,17 +51,24 @@
         id="hamburger"
         popovertarget="mobile-menu"
         popovertargetaction="show">
-        <img src="./images/icon-menu.svg" alt="3 horizontal slashes" />
+        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+            fill="#69707D"
+            fill-rule="evenodd" />
+        </svg>
+        <!-- <img src="./images/icon-menu.svg" alt="3 horizontal slashes" /> -->
       </button>
     </header>
     <main>
       <div class="hero-section">
         <img
+          class="hero-img"
           src="./images/illustration-working.svg"
           alt="person working on computer at a desk" />
 
         <div class="hero-text">
-          <h1>More than just shorter links</h1>
+          <h1 class="poppins-bold">More than just shorter links</h1>
           <p>
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
@@ -70,14 +77,14 @@
         </div>
       </div>
       <div class="advanced-stat-container">
-        <div class="url-input-container">
+        <!-- <div class="url-input-container">
           <input
             type="text"
             name="url"
             id="url"
             placeholder="Shorten a link here..." />
           <button>Shorten It!</button>
-        </div>
+        </div> -->
         <div>
           <h2>Advanced Statistics Track</h2>
           <p>
