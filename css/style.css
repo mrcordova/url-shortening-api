@@ -13,6 +13,13 @@ header {
 }
 .advanced-stat-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-card {
+  display: flex;
+  flex-wrap: wrap;
 }
 .hero-section {
   display: flex;
