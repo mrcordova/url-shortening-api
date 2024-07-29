@@ -16,10 +16,22 @@ header {
   display: flex;
   flex-direction: column;
 }
-
+.boost-container {
+  display: flex;
+  flex-direction: column;
+}
 .details-card {
   display: flex;
   flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.icons {
+  display: flex;
 }
 .hero-section {
   display: flex;
@@ -42,6 +54,13 @@ header {
   }
   #desktop-menu {
     display: flex;
+    & > menu {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  footer {
+    flex-direction: row;
   }
   #hamburger {
     display: none;
