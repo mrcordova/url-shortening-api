@@ -59,7 +59,7 @@ header {
   flex-direction: column;
   background-color: hsl(230, 25%, 95%);
   text-align: center;
-  padding-block-start: 10.5rem;
+
   padding-block-end: 5rem;
 }
 .boost-container {
@@ -262,6 +262,8 @@ footer {
 
 .links {
   padding: 0;
+  padding-block-start: 10.5rem;
+  padding-block-start: 7rem;
   & > li {
     list-style: none;
     background-color: white;
@@ -272,6 +274,7 @@ footer {
     padding-block: 1.5rem;
     border-radius: 0.5rem;
     gap: 0.5rem;
+    margin-block-end: 2rem;
   }
 
   & > li > p:first-child {
