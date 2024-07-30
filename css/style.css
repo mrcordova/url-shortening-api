@@ -259,6 +259,43 @@ footer {
     }
   }
 }
+
+.links {
+  padding: 0;
+  & > li {
+    list-style: none;
+    background-color: white;
+    display: flex;
+
+    flex-direction: column;
+    margin-inline: 1rem;
+    padding-block: 1.5rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  & > li > p:first-child {
+    text-align: start;
+    border-bottom: 1px solid var(--Gray);
+    padding-block-end: 0.5rem;
+  }
+
+  & > li > p:nth-child(2) {
+    text-align: start;
+    color: var(--Cyan);
+  }
+  & > li > * {
+    padding-inline: 1.5rem;
+  }
+
+  & > li > button {
+    margin-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--Cyan);
+  }
+}
 .path {
   background-color: var(--Cyan);
   width: 0.5rem;
