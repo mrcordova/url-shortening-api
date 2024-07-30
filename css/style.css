@@ -28,6 +28,10 @@ body {
   min-height: 100svh;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -43,6 +47,9 @@ header {
   transform: scale(1.5);
   & > svg > path {
     fill: var(--Grayish-Violet);
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -80,6 +87,10 @@ header {
     font-size: 1.3rem;
     padding-inline: 2.3rem;
     padding-block: 0.8rem;
+
+    &:hover {
+      background-color: hsl(from var(--Cyan) h s 70%);
+    }
   }
 }
 .details-card {
@@ -159,9 +170,11 @@ footer {
   & > div > ul > li {
     list-style: none;
     font-size: 0.9rem;
-  }
 
-  & > div > ul > li:first-child {
+    &:hover {
+      cursor: pointer;
+      color: var(--Cyan);
+    }
   }
 }
 .icons {
@@ -170,6 +183,11 @@ footer {
   padding-block-start: 3rem;
   padding-block-end: 2rem;
   gap: 1.5rem;
+
+  & > svg > path:hover {
+    fill: var(--Cyan);
+    cursor: pointer;
+  }
 }
 .heading-card {
   padding-block-end: 4.6rem;
@@ -235,6 +253,10 @@ footer {
     padding-block: 0.8rem;
     margin-block-start: 1.8rem;
     margin-block-end: 10.5rem;
+
+    &:hover {
+      background-color: hsl(from var(--Cyan) h s l / 0.5);
+    }
   }
 }
 .path {
@@ -274,6 +296,10 @@ footer {
     border-radius: 0.5rem;
     font-size: 1.1rem;
     padding-block: 0.75rem;
+
+    &:hover {
+      background-color: hsl(from var(--Cyan) h s 70%);
+    }
   }
 }
 @media (min-width: 50rem) {
