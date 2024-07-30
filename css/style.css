@@ -124,10 +124,52 @@ header {
 footer {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
+  align-items: center;
+  color: white;
+  background-color: var(--Very-Dark-Violet);
+  text-align: center;
+
+  padding-block-start: 3.3rem;
+  & > svg {
+  }
+  & > svg > path {
+    fill: white;
+  }
+
+  & > div > h4 {
+    padding-block-start: 3rem;
+    padding-block-end: 1.5rem;
+  }
+  & > div > ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  & > div:nth-child(3) > h4 {
+    padding-block-start: 2.3rem;
+    padding-block-end: 1.5rem;
+  }
+
+  & > div:nth-child(4) > h4 {
+    padding-block-start: 2.5rem;
+    padding-block-end: 1.4rem;
+  }
+
+  & > div > ul > li {
+    list-style: none;
+    font-size: 0.9rem;
+  }
+
+  & > div > ul > li:first-child {
+  }
 }
 .icons {
   display: flex;
+  align-items: center;
+  padding-block-start: 3rem;
+  padding-block-end: 2rem;
+  gap: 1.5rem;
 }
 .heading-card {
   padding-block-end: 4.6rem;
