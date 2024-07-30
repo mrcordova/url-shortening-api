@@ -34,7 +34,7 @@ button:hover {
 
 header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 
   padding-inline: 1rem 1.2rem;
@@ -403,9 +403,39 @@ footer {
   }
   #desktop-menu {
     display: flex;
+    flex: 1;
+
     & > menu {
       display: flex;
       flex-direction: row;
+      color: var(--Gray);
+      gap: 1.5rem;
+
+      width: 100%;
+      flex: 1;
+      & > li {
+        list-style: none;
+        &:hover {
+          cursor: pointer;
+          color: var(--Very-Dark-Violet);
+        }
+      }
+
+      & > li:nth-child(4) {
+        margin-inline-start: auto;
+      }
+      & > .sign-up {
+        padding-inline: 1rem;
+        padding-block: 0.2rem;
+        border-radius: 1rem;
+        background-color: var(--Cyan);
+        color: white;
+
+        &:hover {
+          background-color: hsl(from var(--Cyan) h s 70%);
+          color: white;
+        }
+      }
     }
   }
   footer {
