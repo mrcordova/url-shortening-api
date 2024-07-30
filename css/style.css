@@ -95,8 +95,9 @@ header {
 }
 .details-card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: center;
 }
 .detail-card {
   position: relative;
@@ -262,8 +263,8 @@ footer {
 
 .links {
   padding: 0;
+
   padding-block-start: 10.5rem;
-  padding-block-start: 7rem;
   & > li {
     list-style: none;
     background-color: white;
@@ -297,6 +298,10 @@ footer {
     border-radius: 0.5rem;
     color: white;
     background-color: var(--Cyan);
+  }
+  &.empty {
+    padding-block-end: 4rem;
+    padding-block-start: 8rem;
   }
 }
 .path {
@@ -351,6 +356,9 @@ footer {
   }
   .hero-section {
     flex-direction: row-reverse;
+  }
+  .details-card {
+    flex-direction: row;
   }
   #desktop-menu {
     display: flex;
