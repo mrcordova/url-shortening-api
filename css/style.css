@@ -34,7 +34,7 @@ button:hover {
 
 header {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
 
   padding-inline: 1rem 1.2rem;
@@ -297,6 +297,10 @@ footer {
     border-radius: 0.5rem;
     color: white;
     background-color: var(--Cyan);
+
+    &:hover {
+      background-color: hsl(from var(--Cyan) h s 70%);
+    }
   }
   &.empty {
     padding-block-end: 4rem;
@@ -440,6 +444,17 @@ footer {
   }
   footer {
     flex-direction: row;
+  }
+
+  .links {
+    & > li {
+      flex-direction: row;
+    }
+
+    & > li > p:first-child {
+      margin-inline-end: auto;
+      border-bottom: 0;
+    }
   }
   #hamburger {
     display: none;
