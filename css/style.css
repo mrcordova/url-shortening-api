@@ -404,22 +404,34 @@ footer {
   /* padding-inline: 1.5rem; */
   /* margin-inline: 1rem; */
   /* Desktop */
-  padding-block: 1.5rem;
-  padding-inline: 1.5rem;
-  margin-inline: 10rem;
+  padding-block: 3.2rem;
+  padding-inline: 3.9rem;
+  margin-inline: 9.85rem;
 
   & > input {
+    /* Mobile */
     padding-block: 0.75rem 0.7rem;
     padding-inline: 0.9rem;
+    /* Desktop */
+    border-radius: 0.5rem;
+    padding-block: 1.125rem 1.125rem;
+    padding-inline: 0.9rem;
+    width: 100%;
   }
   & > button {
     text-align: center;
     color: white;
     background-color: var(--Cyan);
-
     border-radius: 0.5rem;
-    font-size: 1.1rem;
-    padding-block: 0.75rem;
+
+    /* Mobile */
+    /* font-size: 1.1rem; */
+    /* padding-block: 0.75rem; */
+    /* Desktop */
+    font-size: 1.3rem;
+    padding-block: rem;
+    width: 11ch;
+    padding-inline: 2.5rem;
 
     &:hover {
       background-color: hsl(from var(--Cyan) h s 70%);
@@ -448,9 +460,12 @@ footer {
       flex-direction: row;
       color: var(--Gray);
       gap: 1.8rem;
-      padding: 2.8rem;
+      padding-block: 2.3rem;
+      padding-inline-start: 2.8rem;
+      padding-inline-end: 2.8rem;
       width: 100%;
       flex: 1;
+      align-items: center;
       & > li {
         list-style: none;
         font-size: 0.95rem;
@@ -464,9 +479,9 @@ footer {
         margin-inline-start: auto;
       }
       & > .sign-up {
-        padding-inline: 1rem;
-        padding-block: 0.2rem;
-        border-radius: 1rem;
+        padding-inline: 1.4rem;
+        padding-block: 0.55rem;
+        border-radius: 2rem;
         background-color: var(--Cyan);
         color: white;
 
