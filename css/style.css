@@ -527,6 +527,7 @@ footer {
   .url-input-container {
     background-image: url("/images/bg-shorten-desktop.svg");
     flex-direction: row;
+    background-position: right;
     background-size: cover;
   }
 }
