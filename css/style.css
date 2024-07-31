@@ -68,8 +68,8 @@ header {
   /* Mobile */
   /* padding-block-end: 5rem; */
   /* Desktop */
-  padding-block-end: 5rem;
-  padding-inline: 10rem;
+  padding-block-end: 7.5rem;
+  padding-inline: 10rem 10rem;
 }
 .boost-container {
   display: flex;
@@ -83,12 +83,19 @@ header {
   background-color: var(--Dark-Violet);
 
   color: white;
-  padding-block: 6rem 5.7rem;
+  /* Mobile */
+  /* padding-block: 6rem 5.7rem; */
+  /* gap: 1rem; */
+  /* Desktop */
+  padding-block: 3.5rem 3.7rem;
 
-  gap: 1rem;
+  gap: 1.5rem;
 
   & > h2 {
-    font-size: 1.65rem;
+    /* Mobile */
+    /* font-size: 1.65rem; */
+    /* Desktop */
+    font-size: 2.4rem;
   }
   & > button {
     background-color: var(--Cyan);
@@ -116,18 +123,27 @@ header {
   position: relative;
   background-color: white;
   padding-block: 4rem 2.5rem;
-  margin-inline: 1rem;
   border-radius: 0.5rem;
+  /* Mobile */
+  /* margin-inline: 1rem; */
+  /* Desktop */
+  /* margin-inline: 0rem 1.1rem; */
   & > h3 {
-    font-size: 1.4rem;
+    font-size: 1.38rem;
     padding-block-start: 0.7rem;
     /* Desktop */
-    padding-inline: 2rem;
+    padding-inline: 1.8rem;
   }
   & > p {
     color: var(--Grayish-Violet);
+    /* Mobile */
+    /* padding-block-start: 0.9rem; */
+    /* padding-inline: 2rem; */
+    /* font-size: 0.95rem; */
+    /* line-height: 1.7; */
+    /* Desktop */
     padding-block-start: 0.9rem;
-    padding-inline: 2rem;
+    padding-inline: 1.8rem;
     font-size: 0.95rem;
     line-height: 1.7;
   }
@@ -135,7 +151,7 @@ header {
 
 .detail-card:nth-child(3) {
   padding-block-end: 2rem;
-  margin-block: 3.5rem;
+  margin-block: 3rem;
 }
 .detail-img {
   background-color: var(--Dark-Violet);
@@ -148,7 +164,7 @@ header {
   /* left: 7.5rem; */
   /* Desktop */
   top: -2.8rem;
-  left: 1rem;
+  left: 1.8rem;
 }
 .last-detail-img {
   padding: 1.2rem;
@@ -210,7 +226,10 @@ footer {
   }
 }
 .heading-card {
-  padding-block-end: 4.6rem;
+  /* Mobile */
+  /* padding-block-end: 4.6rem; */
+  /* Desktop */
+  padding-block-end: 5.5rem;
   & > h2 {
     color: var(--Very-Dark-Blue);
     /* Mobile */
@@ -413,8 +432,12 @@ footer {
 }
 .path {
   background-color: var(--Cyan);
+  /* Mobile */
   width: 0.5rem;
   height: 5.8rem;
+  /* Desktop */
+  height: 0.5rem;
+  width: 5.8rem;
 }
 .url-input-container {
   background-image: url("/images/bg-shorten-mobile.svg");
