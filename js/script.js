@@ -14,8 +14,7 @@ let myHeaders = new Headers({
   "Content-Type": "application/json",
   "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
 });
-This site was blocked because it may contain unsafe content that can harm your device or compromise
-					your personal info.
+
 const dataResponse = await fetch(`${URL}${API_ENDPOINT}`, {
   method: "POST",
   mode: "no-cors",
