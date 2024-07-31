@@ -6,7 +6,7 @@
 // Notes
 // Long URLs should be URL-encoded. You can not include a longUrl in the request that has &, ?, #, or other reserved parameters without first encoding it.
 // Long URLs should not contain spaces: any longUrl with spaces will be rejected. All spaces should be either percent encoded %20 or plus encoded +. Note that tabs, newlines and trailing spaces are all indications of errors. Please remember to strip leading and trailing whitespace from any user input before shortening.
-const URL = "http://cleanuri.com";
+const URL = "https://cleanuri.com";
 const API_ENDPOINT = "/api/v1/shorten";
 let myHeaders = new Headers({
   "Access-Control-Allow-Headers": "Content-Type",
