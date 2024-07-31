@@ -177,14 +177,31 @@ footer {
   background-color: var(--Very-Dark-Violet);
   text-align: center;
 
-  padding-block-start: 3.3rem;
+  /* Mobile */
+  /* padding-block-start: 3.3rem; */
 
+  /* DEsktop */
+  text-align: left;
+  padding-inline: 9.7rem;
+  padding-block-start: 4.5rem;
+  padding-block-end: 3.3rem;
+
+  align-items: flex-start;
+  gap: 6rem;
   & > svg > path {
     fill: white;
   }
 
+  & > div:nth-of-type(1) {
+    /* Desktop */
+    margin-inline-start: auto;
+  }
   & > div > h4 {
-    padding-block-start: 3rem;
+    /* Mobile */
+    /* padding-block-start: 3rem; */
+    /* padding-block-end: 1.5rem; */
+    /* Desktop */
+    padding-block-start: 0rem;
     padding-block-end: 1.5rem;
   }
   & > div > ul {
@@ -194,12 +211,20 @@ footer {
     gap: 0.7rem;
   }
   & > div:nth-child(3) > h4 {
-    padding-block-start: 2.3rem;
+    /* Mobile */
+    /* padding-block-start: 2.3rem; */
+    /* padding-block-end: 1.5rem; */
+    /* Desktop */
+    padding-block-start: 0rem;
     padding-block-end: 1.5rem;
   }
 
   & > div:nth-child(4) > h4 {
-    padding-block-start: 2.5rem;
+    /* Mobile */
+    /* padding-block-start: 2.5rem; */
+    /* padding-block-end: 1.4rem; */
+    /* Desktop */
+    padding-block-start: 0rem;
     padding-block-end: 1.4rem;
   }
 
@@ -216,7 +241,12 @@ footer {
 .icons {
   display: flex;
   align-items: center;
-  padding-block-start: 3rem;
+  /* Mobile */
+  /* padding-block-start: 3rem; */
+  /* padding-block-end: 2rem; */
+  /* gap: 1.5rem; */
+  /* Desktop */
+  padding-block-start: 0rem;
   padding-block-end: 2rem;
   gap: 1.5rem;
 
