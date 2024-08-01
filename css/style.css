@@ -295,6 +295,7 @@ footer {
 
   padding-block-start: clamp(7rem, 11.7324rem + -5.2582vw, 10.5rem);
   padding-block-end: clamp(0rem, -2.4648rem + 10.5164vw, 7rem);
+  width: 100%;
 
   & > li {
     list-style: none;

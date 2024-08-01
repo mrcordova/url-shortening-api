@@ -11,6 +11,7 @@ const URL = "https://tinyurl.com/api-create.php?url=";
 const linkInput = document.getElementById("url");
 const shortenBtn = document.querySelector(".url-input-container>button");
 const errorSpan = document.querySelector(".error-empty");
+const links = document.querySelector(".links");
 
 async function getUrl(url) {
   const dataResponse = await fetch(`${URL}${url}`);
@@ -27,6 +28,13 @@ shortenBtn.addEventListener("click", async (e) => {
   );
   if (linkInput.checkValidity()) {
     const shortenUrl = await getUrl(linkInput.value);
-    console.log(shortenUrl);
+    links.insertAdjacentHTML(
+      "beforeend",
+      `<li>
+        <p>${linkInput.value}</p>
+        <p>${shortenUrl}</p>
+        <button>Copy</button>
+        </li>`
+    );
   }
 });
