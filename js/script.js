@@ -6,20 +6,8 @@
 // Notes
 // Long URLs should be URL-encoded. You can not include a longUrl in the request that has &, ?, #, or other reserved parameters without first encoding it.
 // Long URLs should not contain spaces: any longUrl with spaces will be rejected. All spaces should be either percent encoded %20 or plus encoded +. Note that tabs, newlines and trailing spaces are all indications of errors. Please remember to strip leading and trailing whitespace from any user input before shortening.
-const URL = "https://cleanuri.com";
-const API_ENDPOINT = "/api/v1/shorten";
-let myHeaders = new Headers({
-  "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Allow-Origin": "*",
-  "Content-Type": "application/json",
-  "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
-});
+const URL = "https://tinyurl.com/api-create.php?url=";
+const API_ENDPOINT = "https%3A%2F%2Fgoogle.com%2F";
 
-const dataResponse = await fetch(`${URL}${API_ENDPOINT}`, {
-  method: "POST",
-  mode: "no-cors",
-  body: { url: "https%3A%2F%2Fgoogle.com%2F" },
-});
-const shortenUrl = await dataResponse.json()["result_url"];
-
-console.log(shortenUrl);
+const dataResponse = await fetch(`${URL}${API_ENDPOINT}`);
+const shortenUrl = await dataResponse.text();
