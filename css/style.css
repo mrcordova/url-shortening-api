@@ -172,6 +172,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+    
   }
   & > div:nth-child(3) > h4 {
     padding-block-start: clamp(0rem, 3.1099rem + -3.4554vw, 2.3rem);
@@ -188,6 +189,7 @@ footer {
   & > div > ul > li {
     list-style: none;
     font-size: 0.9rem;
+    transition:1s ease;
 
     &:hover {
       cursor: pointer;
@@ -296,13 +298,14 @@ footer {
   padding-block-start: clamp(7rem, 11.7324rem + -5.2582vw, 10.5rem);
   padding-block-end: clamp(0rem, -2.4648rem + 10.5164vw, 7rem);
   width: 100%;
+   transition:1s ease;
 
   & > li {
     list-style: none;
     background-color: white;
     display: flex;
     flex-direction: column;
-
+ transition:1s ease;
     margin-inline: clamp(0rem, 1.3521rem + -1.5023vw, 1rem);
    
     margin-block-end: 2rem;
