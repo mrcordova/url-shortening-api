@@ -20,8 +20,11 @@ async function getUrl(url) {
 }
 async function copyUrl(e) {
   await navigator.clipboard.writeText(
-    e.currentTarget.previousElementSibling.textContent
+    e.target.previousElementSibling.textContent
   );
+
+  e.target.classList.add("copied");
+  e.target.textContent = "Copied!";
 }
 shortenBtn.addEventListener("click", async (e) => {
   e.preventDefault();

@@ -340,6 +340,10 @@ footer {
     padding-block-end: 4rem;
     padding-block-start: 8rem;
   }
+
+  & > li > .copied {
+    background-color: var(--Dark-Violet);
+  }
 }
 #mobile-menu {
   border: 0;
