@@ -412,6 +412,8 @@ footer {
 
   & > div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   & > div > input {
     display: flex;
@@ -427,6 +429,18 @@ footer {
     border-radius: 0.5rem;
     
     width: 100%;
+  }
+
+  &>div >.error-border{
+    border: 3px solid var(--Red);
+    
+  }
+  &>div>.error-border::placeholder {
+    color: var(--Red);
+  }
+  &> div > .error-empty {
+    color: var(--Red);
+    text-align: left;
   }
   & > button {
     text-align: center;
@@ -444,6 +458,10 @@ footer {
       background-color: hsl(from var(--Cyan) h s 70%);
     }
   }
+}
+
+.hide {
+  display: none;
 }
 @media (min-width: 50rem) {
   .boost-container {

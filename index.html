@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="advanced-stat-container">
-        <form class="url-input-container">
+        <form class="url-input-container" novalidate>
           <div>
             <input
               required
@@ -85,7 +85,7 @@
               name="url"
               id="url"
               placeholder="Shorten a link here..." />
-            <span></span>
+            <span class="error-empty hide">Please add a link</span>
           </div>
           <button class="poppins-bold">Shorten It!</button>
         </form>
