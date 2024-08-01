@@ -1,6 +1,6 @@
 // - Shorten any valid URL done
 // - See a list of their shortened links, even after refreshing the browser
-// - Copy the shortened link to their clipboard in a single click
+// - Copy the shortened link to their clipboard in a single click done
 // - Receive an error message when the `form` is submitted if: done
 //   - The `input` field is empty
 // Notes
@@ -18,7 +18,11 @@ async function getUrl(url) {
   const shortenUrl = await dataResponse.text();
   return shortenUrl;
 }
-
+async function copyUrl(e) {
+  await navigator.clipboard.writeText(
+    e.currentTarget.previousElementSibling.textContent
+  );
+}
 shortenBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   errorSpan.classList.toggle("hide", linkInput.checkValidity());
@@ -36,5 +40,9 @@ shortenBtn.addEventListener("click", async (e) => {
         <button>Copy</button>
         </li>`
     );
+
+    links.lastElementChild.lastElementChild.addEventListener("click", copyUrl);
+    // console.log(links.lastElementChild.lastElementChild);
+    // await navigator.clipboard.writeText(shortenUrl);
   }
 });
