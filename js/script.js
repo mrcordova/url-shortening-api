@@ -38,9 +38,13 @@ function populateLinks() {
   localStorage.setItem("links", JSON.stringify(items));
 }
 async function getUrl(url) {
-  const dataResponse = await fetch(`${URL}${url}`);
-  const shortenUrl = await dataResponse.text();
-  return shortenUrl;
+  try {
+    const dataResponse = await fetch(`${URL}${url}`);
+    const shortenUrl = await dataResponse.text();
+    return shortenUrl;
+  } catch (error) {
+    console.error(error);
+  }
 }
 async function copyUrl(e) {
   await navigator.clipboard.writeText(
@@ -59,8 +63,11 @@ shortenBtn.addEventListener("click", async (e) => {
   );
   if (linkInput.checkValidity()) {
     const shortenUrl = await getUrl(linkInput.value);
-    createLi(linkInput.value, shortenUrl);
-    populateLinks();
+    if (shortenUrl !== "Error") {
+      createLi(linkInput.value, shortenUrl);
+      populateLinks();
+    }
+
     linkInput.value = "";
   }
 });
